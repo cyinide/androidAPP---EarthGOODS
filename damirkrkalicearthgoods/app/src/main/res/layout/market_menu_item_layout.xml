@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="@dimen/padding_regular"
+    android:orientation="vertical"
+    android:id="@+id/stavkaJelovnikRoot"
+    android:background="@drawable/ripple_effect">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_regular"
+            android:layout_marginTop="3dp">
+
+            <ImageButton
+                android:id="@+id/btnDodajKorpaStavku"
+                android:src="@drawable/ic_plus_round"
+                android:backgroundTint="@color/Transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textStavkaJelovnikNaziv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lasagne"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textStavkaJelovnikOpis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_xs"
+                    android:text="Cheesey"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textStavkaJelovnikCijena"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:gravity="top|right"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margin_regular"
+                android:text="8.00 KM"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/jelovnikStavkaAddedStatsHolder"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_regular">
+
+            <ImageButton
+                android:paddingTop="0dp"
+                android:id="@+id/btnUkloniKorpaStavku"
+                android:src="@drawable/ic_minus_round"
+                android:backgroundTint="@color/Transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textStavkaJelovnikStats"
+                android:textAllCaps="true"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margin_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/page_margin_large"
+    android:layout_marginTop="@dimen/page_margin_large"
+    android:layout_marginRight="@dimen/page_margin_large"
+    android:orientation="vertical"
+    tools:context="com.example.guestuser.damirkrkalicearthgoods.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/earthGoodsImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_earthgoods" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputLoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="text"
+            android:paddingLeft="@dimen/padding_regular"
+            android:hint="@string/username"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/padding_regular"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_marginBottom="7dp"
+        android:textAllCaps="false"
+        android:text="Login me!"/>
+
+
+    <Button
+        android:id="@+id/btnOpenRegistration"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Not a member? Sign up now." />
+
+    <ProgressBar
+        android:id="@+id/progressBar_login"
+        style="@style/AppTheme.ProgressBar.Medium"
+        android:visibility="invisible" />
+
+
+
+</LinearLayout>

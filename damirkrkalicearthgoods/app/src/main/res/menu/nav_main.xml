@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_restorani"
+            android:title="Restaurants" />
+        <!-- android:icon="@drawable/ic_foodmarket"-->
+        <item
+            android:id="@+id/nav_omiljeni"
+         android:iconTint="@color/colorBackgroundDark"
+         android:title="My Favourite"
+            />
+        <!-- android:icon="@drawable/ic_heart"-->
+     <item
+         android:id="@+id/nav_korpa"
+         android:title="My cart" />
+        <!-- android:icon="@drawable/ic_korpa" -->
+
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Personal information &amp; security"
+        />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+            <!--android:icon="@drawable/ic_user_filled"/ -->
+ </group>
+
+ <!--<item android:title="Račun">
+     <menu>
+         <item
+             android:id="@+id/nav_profile"
+            android:title="Moj profil" />
+            android:icon="@drawable/ic_user_filled"
+        <item
+            android:id="@+id/nav_logout"
+           android:title="Logout" />
+           android:icon="@drawable/ic_chevron_left"
+   </menu>
+</item>
+-->
+</menu>

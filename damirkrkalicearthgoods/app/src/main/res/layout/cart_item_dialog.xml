@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:fitsSystemWindows="true"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnStavkaKorpaDialogNazad"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/colorWhite"
+            android:src="@drawable/ic_chevron_left"/>
+
+        <TextView
+            android:id="@+id/textStavkaKorpaDialogTitle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Korpa stavka"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>
+
+<ImageView
+    android:id="@+id/imageStavkaKorpaDialog"
+    android:layout_width="match_parent"
+    android:layout_height="250dp" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textStavkaKorpaDialogNaziv"
+            android:textColor="@color/colorSecondary"
+            android:textSize="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textStavkaKorpaDialogRestoran"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textStavkaKorpaDialogKolicina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textAllCaps="true"
+        android:textSize="21dp"
+        android:textColor="@color/colorTypographySemiDark"
+        android:id="@+id/textStavkaKorpaDialogCijena"
+        android:textAlignment="viewEnd"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+<View style="@style/Divider.Small"/>
+
+<TextView
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:id="@+id/textStavkaKorpaDialogOpis"
+    android:textColor="@color/colorSecondary"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+<Button
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/btnStavkaKorpaDialogUkloni"
+    android:backgroundTint="@color/colorPrimaryLight"
+    android:text="Remove from cart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

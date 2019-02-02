@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_regular"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textDetaljnoRestoranOpis"
+        android:paddingBottom="@dimen/padding_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/market_desc"/>
+
+
+    <TextView
+        android:text="OFFERING"
+        android:textColor="@color/colorSecondaryLight"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:paddingBottom="@dimen/padding_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.chip.ChipGroup
+        android:id="@+id/chipGroupRestoranTipovihrane"
+        android:layout_marginBottom="@dimen/margin_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.design.chip.ChipGroup>
+
+    <View style="@style/Divider.Small"></View>
+
+    <TextView
+        android:text="Owner "
+        android:textColor="@color/colorSecondaryLight"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:paddingBottom="@dimen/padding_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textDetaljnoRestoranVlasnikImePrezime"
+            android:paddingBottom="@dimen/padding_xs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Damir Krkalić"/>
+        <TextView
+            android:id="@+id/textDetaljnoRestoranVlasnikEmail"
+            android:paddingBottom="@dimen/padding_xs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="damir.krkalic@edu.fit.ba"/>
+
+    </LinearLayout>
+
+
+    <View style="@style/Divider.Small"></View>
+
+
+    <TextView
+        android:text="@string/market_loc"
+        android:textColor="@color/colorSecondaryLight"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="@dimen/padding_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textDetaljnoRestoranAdresa"
+                android:paddingBottom="@dimen/padding_xs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maršala Tita 16"/>
+            <TextView
+                android:id="@+id/textDetaljnoRestoranLokacija"
+                android:paddingBottom="@dimen/padding_xs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zalik, Mostar"/>
+
+        </LinearLayout>
+
+    <View style="@style/Divider.Small"></View>
+
+    <TextView
+        android:text="@string/contact_info"
+        android:textColor="@color/colorSecondaryLight"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="@dimen/padding_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textDetaljnoRestoranTelefon"
+                android:paddingBottom="@dimen/padding_xs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel. +387 62 005 152"/>
+
+
+            <TextView
+                android:id="@+id/textDetaljnoRestoranWebUrl"
+                android:paddingBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Web www.petica.com"/>
+            <TextView
+                android:id="@+id/textDetaljnoRestoranEmail"
+                android:paddingBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email info@petica.com"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

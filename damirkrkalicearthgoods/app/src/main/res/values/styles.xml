@@ -1,0 +1,184 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="android:windowContentOverlay">@color/colorSecondary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+
+        <item name="textInputStyle">@style/AppTheme.TextInputLayout</item>
+        <item name="android:listViewStyle">@style/AppTheme.ListViewStyle</item>
+        <item name="bottomNavigationStyle">@style/AppTheme.BottomNavigationStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:text">Earth goods</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/ActionOverflowButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay.Transparent" parent="AppTheme.AppBarOverlay">
+        <item name="android:backgroundTint">@color/Transparent</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay.Settings" parent="AppTheme.AppBarOverlay">
+        <item name="android:backgroundTint">@color/colorWhitePressed</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <style name="ActionOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <style name="DialogsTheme" parent="AppTheme" />
+
+    <style name="AlertDialogsTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogsTheme.Components.Root" parent="AlertDialogsTheme">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="AlertDialogsTheme.Components.Title" parent="TextAppearance.MaterialComponents.Headline6">
+    </style>
+
+    <style name="AlertDialogsTheme.Components.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AlertDialogsTheme.Components.Button" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="AlertDialogsTheme.Components.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar">
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar.Medium" parent="AppTheme.ProgressBar">
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:maxWidth">50dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">50dp</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar.Small" parent="AppTheme.ProgressBar">
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:maxWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:minWidth">25dp</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar.MatchParent" parent="AppTheme.ProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#ddd</item>
+    </style>
+
+    <style name="Divider.Small" parent="Divider">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="Divider.Small.NoBottom" parent="Divider.Small">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="Divider.Xsmall" parent="Divider">
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="AppTheme.NoDivider">
+        <item name="android:divider">#00000000</item>
+    </style>
+
+    <style name="AppTheme.BottomNavigationStyle">
+        <item name="itemBackground">@drawable/bg_bottom_navigation_pressed</item>
+        <item name="android:background">@color/colorSecondary</item>
+        <item name="itemIconTint">@color/colorWhite</item>
+        <item name="itemTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.ListViewStyle" parent="Widget.AppCompat.ListView">
+        <item name="android:fadeScrollbars">false</item>
+    </style>
+
+    <style name="AppTheme.TextButton.Small" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/AppTheme.TextInputLayout.HintText</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.CardIconButton">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Fab" parent="Widget.Design.FloatingActionButton">
+    </style>
+
+    <style name="AppTheme.SettingsButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:gravity="bottom"
+        android:translationZ="@dimen/appbar_translation_z"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_plus_statusbar_height"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/btnJelovnikClose"
+                    android:tint="@color/colorWhite"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_chevron_left"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/titleKorpaNaziv"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Petica - Placeholder"
+                    style="@style/Base.TextAppearance.AppCompat.Title" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ProgressBar
+            android:id="@+id/progressBar_hranaList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/progressbar_minheight"
+            android:minWidth="@dimen/progressbar_minwidth"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/restoranJelovnikNoData"
+            android:text="@string/empty_food"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SearchView
+                android:id="@+id/searchViewPretraga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryBackground="@color/Transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search for food..."/>
+
+            <View style="@style/Divider.Xsmall"></View>
+
+            <ListView
+                android:drawSelectorOnTop="true"
+                android:id="@+id/listViewHrana"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+            </ListView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

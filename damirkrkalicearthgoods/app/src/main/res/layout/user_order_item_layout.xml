@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textStavkaNarudzbaDatum"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="21.12.1202 | "
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/textStavkaNarudzbaTime"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="21:22:22 | "
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textStavkaNarudzbaCijena"
+                android:gravity="top|right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="24.50 KM"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+        </LinearLayout>
+
+        <android.support.design.chip.ChipGroup
+            android:layout_marginTop="5dp"
+            android:id="@+id/chipgroupStavkaNarudzbaHrana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.design.chip.ChipGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>
